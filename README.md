@@ -66,6 +66,7 @@ Or run `ProgresssoftApplication.java` in your IDE.
 - The response will be a log listing what happened to each deal row (saved, skipped, error).
 
 ---
+
 ### API Response Example
 ```json
 [
