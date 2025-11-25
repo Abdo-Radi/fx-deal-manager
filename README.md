@@ -66,9 +66,10 @@ Or run `ProgresssoftApplication.java` in your IDE.
 - The response will be a log listing what happened to each deal row (saved, skipped, error).
 
 ---
-```
+
 ### API Response Example
-```json
+\```json
+
 [
   "Row 2: Deal [DEAL-001] saved.",
   "Row 3 Skipped: Duplicate Unique ID [DEAL-001]",
