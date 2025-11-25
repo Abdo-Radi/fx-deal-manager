@@ -94,6 +94,7 @@ Or run `ProgresssoftApplication.java` in your IDE.
 
 ---
 ## Project Structure
+```
 ├── src/
 │ ├── main/java/com/progresssoft/fxdealmanager/
 │ │ ├── controller/DealController.java
@@ -105,6 +106,7 @@ Or run `ProgresssoftApplication.java` in your IDE.
 ├── docker-compose.yml
 ├── pom.xml
 └── README.md
+```
 ---
 
 ## How It Works
