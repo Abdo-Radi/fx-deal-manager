@@ -91,30 +91,11 @@ Or run `ProgresssoftApplication.java` in your IDE.
 
 ---
 
-## Project Structure
-
-src/
-    main/java/com/progresssoft/fxdealmanager/
-        controller/
-        model/
-        repository/
-        service/
-        exception/
-    resources/
-        application.properties
-    static/
-    templates/
-    test/java/com/progresssoft/fxdealmanager/
-docker-compose.yml
-Dockerfile
-README.md
-pom.xml
-
----
 
 
 
-## Authors
+
+## Author
 
 - Abdellah Radi, 2025
 
