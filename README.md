@@ -74,7 +74,7 @@ Or run `ProgresssoftApplication.java` in your IDE.
   "Row 4 Error: Invalid timestamp format: 2024-01-15"
 ]
 ---
-
+---
 ## Testing & Validation
 
 - Automated unit tests live in `src/test/java`
