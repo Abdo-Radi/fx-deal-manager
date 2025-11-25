@@ -26,13 +26,16 @@ A secure, maintainable bank money exchange deal processor built with Spring Boot
 
 ### Clone and Build
 git clone https://github.com/Abdo-Radi/fx-deal-manager.git
+```
 cd fx-deal-manager
 mvn clean install
-
+```
 ---
 
 ### Run PostgreSQL with Docker
+```
 docker compose up -d
+```
 Launches a PostgreSQL server on port 5432, ready for the app.
 
 ---
@@ -40,19 +43,19 @@ Launches a PostgreSQL server on port 5432, ready for the app.
 ### Configure Application
 
 Edit `src/main/resources/application.properties` if needed:
-
+```
 spring.datasource.url=jdbc:postgresql://localhost:5432/fxdealdb
 spring.datasource.username=fxuser
 spring.datasource.password=fxpassword
 logging.file.name=deal-import.log
-
+```
 
 ---
 
 ### Start the Application
-
+```
 ./mvnw clean spring-boot:run
-
+```
 Or run `ProgresssoftApplication.java` in your IDE.
 
 ---
