@@ -26,13 +26,16 @@ A secure, maintainable bank money exchange deal processor built with Spring Boot
 
 ### Clone and Build
 git clone https://github.com/Abdo-Radi/fx-deal-manager.git
-cd FXDealManager
+```
+cd fx-deal-manager
 mvn clean install
-
+```
 ---
 
 ### Run PostgreSQL with Docker
+```
 docker compose up -d
+```
 Launches a PostgreSQL server on port 5432, ready for the app.
 
 ---
@@ -40,19 +43,19 @@ Launches a PostgreSQL server on port 5432, ready for the app.
 ### Configure Application
 
 Edit `src/main/resources/application.properties` if needed:
-
+```
 spring.datasource.url=jdbc:postgresql://localhost:5432/fxdealdb
 spring.datasource.username=fxuser
 spring.datasource.password=fxpassword
 logging.file.name=deal-import.log
-
+```
 
 ---
 
 ### Start the Application
-
+```
 ./mvnw clean spring-boot:run
-
+```
 Or run `ProgresssoftApplication.java` in your IDE.
 
 ---
@@ -67,6 +70,17 @@ Or run `ProgresssoftApplication.java` in your IDE.
 
 ---
 
+### API Response Example
+```
+
+[
+  "Row 2: Deal [DEAL-001] saved.",
+  "Row 3 Skipped: Duplicate Unique ID [DEAL-001]",
+  "Row 4 Error: Invalid timestamp format: 2024-01-15"
+] 
+```
+
+---
 ## Testing & Validation
 
 - Automated unit tests live in `src/test/java`
@@ -82,6 +96,21 @@ Or run `ProgresssoftApplication.java` in your IDE.
 - **Database not connecting:** Ensure `docker compose up -d` succeeds and correct credentials are used.
 
 ---
+## Project Structure
+```
+├── src/
+│ ├── main/java/com/progresssoft/fxdealmanager/
+│ │ ├── controller/DealController.java
+│ │ ├── model/Deal.java
+│ │ ├── repository/DealRepository.java
+│ │ ├── service/DealService.java
+│ │ └── exception/GlobalExceptionHandler.java
+│ └── resources/application.properties
+├── docker-compose.yml
+├── pom.xml
+└── README.md
+```
+---
 
 ## How It Works
 
@@ -91,30 +120,11 @@ Or run `ProgresssoftApplication.java` in your IDE.
 
 ---
 
-## Project Structure
-
-src/
-    main/java/com/progresssoft/fxdealmanager/
-        controller/
-        model/
-        repository/
-        service/
-        exception/
-    resources/
-        application.properties
-    static/
-    templates/
-    test/java/com/progresssoft/fxdealmanager/
-docker-compose.yml
-Dockerfile
-README.md
-pom.xml
-
----
 
 
 
-## Authors
+
+## Author
 
 - Abdellah Radi, 2025
 
@@ -123,3 +133,4 @@ pom.xml
 ## Contributions
 
 Feel free to fork, submit issues, or open pull requests!
+
